@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Debug</key>
+	<dict>
+		<key>END_POINT</key>
+		<string>https://salon360.bavaan.com</string>
+		<key>API_VERSION</key>
+		<string>V1</string>
+		<key>GOOGLE_CLIENT_ID</key>
+		<string>135378308563-q0gres3eopgje3drda6cfuqfv9ns25ek.apps.googleusercontent.com</string>
+		<key>GOOGLE_API_KEY</key>
+		<string>AIzaSyC1Yivef42IOWzESVnfwkMY_PyNskTe7kk</string>
+	</dict>
+	<key>Staging</key>
+	<dict>
+		<key>END_POINT</key>
+		<string>https://salon360.bavaan.com</string>
+		<key>API_VERSION</key>
+		<string>V1</string>
+		<key>GOOGLE_CLIENT_ID</key>
+		<string>135378308563-q0gres3eopgje3drda6cfuqfv9ns25ek.apps.googleusercontent.com</string>
+		<key>GOOGLE_API_KEY</key>
+		<string>AIzaSyC1Yivef42IOWzESVnfwkMY_PyNskTe7kk</string>
+	</dict>
+	<key>Release</key>
+	<dict>
+		<key>END_POINT</key>
+		<string>https://salon360.bavaan.com</string>
+		<key>API_VERSION</key>
+		<string>V1</string>
+		<key>GOOGLE_CLIENT_ID</key>
+		<string>135378308563-q0gres3eopgje3drda6cfuqfv9ns25ek.apps.googleusercontent.com</string>
+		<key>GOOGLE_API_KEY</key>
+		<string>AIzaSyC1Yivef42IOWzESVnfwkMY_PyNskTe7kk</string>
+	</dict>
+</dict>
+</plist>

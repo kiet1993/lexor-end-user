@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="72" id="KGk-i7-Jjw" customClass="SortTableViewCell" customModule="Lexor_iOS_EndUser" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pBC-Kb-qZe">
+                        <rect key="frame" x="20" y="25.5" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPV-wc-afN">
+                        <rect key="frame" x="270" y="16" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="95Q-wE-7pk"/>
+                            <constraint firstAttribute="width" constant="40" id="Lvu-RE-pqs"/>
+                        </constraints>
+                        <state key="normal" image="ic.radio.unselected"/>
+                        <state key="selected" image="ic.radio.selected"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vaY-CS-JYr">
+                        <rect key="frame" x="10" y="0.0" width="300" height="0.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="0tB-Rp-PQ5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gPV-wc-afN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1a5-iU-gfB"/>
+                    <constraint firstItem="vaY-CS-JYr" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="BkU-hy-Lta"/>
+                    <constraint firstItem="pBC-Kb-qZe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Kxc-Pi-OLY"/>
+                    <constraint firstItem="pBC-Kb-qZe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LGP-G1-NKE"/>
+                    <constraint firstItem="vaY-CS-JYr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="d3W-ZV-5Vy"/>
+                    <constraint firstAttribute="trailing" secondItem="gPV-wc-afN" secondAttribute="trailing" constant="10" id="idj-64-ALm"/>
+                    <constraint firstAttribute="trailing" secondItem="vaY-CS-JYr" secondAttribute="trailing" constant="10" id="vRp-Yv-t2j"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="radioButton" destination="gPV-wc-afN" id="A2h-IR-rca"/>
+                <outlet property="separatorView" destination="vaY-CS-JYr" id="wLf-6E-Puf"/>
+                <outlet property="titleLabel" destination="pBC-Kb-qZe" id="aDX-0h-5VS"/>
+            </connections>
+            <point key="canvasLocation" x="-84.057971014492765" y="95.758928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic.radio.selected" width="24" height="24"/>
+        <image name="ic.radio.unselected" width="24" height="24"/>
+    </resources>
+</document>
